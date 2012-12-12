@@ -21,7 +21,7 @@ class Eclarian_TestCase extends PHPUnit_Framework_TestCase {
 	 * @param  array   Arguments to pass to $method
 	 * @return mixed   Return of $method
 	 */
-	public function callPrivate($obj, $method, $args)
+	public function callPrivate($obj, $method, $args = array())
 	{
 		$reflection = new ReflectionObject($obj);
 		$m = $reflection->getMethod($method);
